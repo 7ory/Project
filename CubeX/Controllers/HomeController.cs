@@ -27,9 +27,10 @@ namespace CubeX.Controllers
 
             if (fileName == null)
             {
-                fileName = "food-one.jpg";
+                fileName = "Food1.jpg";
             }
 
+           
             string filePath = HttpContext.Server.MapPath("~/Images/" + fileName);
 
             byte[] file = System.IO.File.ReadAllBytes(filePath);
