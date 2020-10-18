@@ -37,14 +37,15 @@
             </dt>
 
             <dd>
-                @MyHelpers.NumberEdit("Quantity", 20)                
+                
+                @MyHelpers.NumberEdit("Quantity", 20)
             </dd>
         </dl>
 
         <p>
             <input class="btn btn-success" type="submit" value="Confirm Buy" />
             
-            @Html.ActionLink("Goto List", "All", null, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Goto List", "All")
         </p>
     }
 
