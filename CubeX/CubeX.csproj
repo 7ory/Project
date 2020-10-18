@@ -177,7 +177,9 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\ShoppingCartController.cs" />
+    <Compile Include="Controllers\TableController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Extensions\ThumbnailExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -202,6 +204,10 @@
     <Compile Include="Migrations\202010041429131_AddedImagetoFoodItem.Designer.cs">
       <DependentUpon>202010041429131_AddedImagetoFoodItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010181202307_AddTableModels.cs" />
+    <Compile Include="Migrations\202010181202307_AddTableModels.Designer.cs">
+      <DependentUpon>202010181202307_AddTableModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -213,9 +219,16 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
+    <Compile Include="Models\Table.cs" />
+    <Compile Include="Models\TableBooking.cs" />
+    <Compile Include="Models\ThumbnailModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Utilities\SD.cs" />
     <Compile Include="ViewModels\Home\CategoryViewModel.cs" />
+    <Compile Include="ViewModels\TableRentalViewModel.cs" />
+    <Compile Include="ViewModels\TableViewModel.cs" />
+    <Compile Include="ViewModels\ThumbnailBoxViewModel.cs" />
     <Compile Include="ViewModels\UserVM.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -312,6 +325,11 @@
     <Content Include="Views\User\Details.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
     <Content Include="Views\Manage\Edit.cshtml" />
+    <Content Include="Views\Table\Create.cshtml" />
+    <Content Include="Views\Table\Delete.cshtml" />
+    <Content Include="Views\Table\Details.cshtml" />
+    <Content Include="Views\Table\Edit.cshtml" />
+    <Content Include="Views\Table\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -344,6 +362,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010041429131_AddedImagetoFoodItem.resx">
       <DependentUpon>202010041429131_AddedImagetoFoodItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010181202307_AddTableModels.resx">
+      <DependentUpon>202010181202307_AddTableModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
