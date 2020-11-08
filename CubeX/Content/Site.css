@@ -38,7 +38,7 @@ body {
     body::before {
         content: "";
         position: fixed;
-        background-image: url('/Images/Food1.jpg'); 
+        background-image: url('/Images/Pic1.jpeg'); 
         top: 0;
         left: 0;
         bottom: 0;
@@ -57,40 +57,40 @@ body {
 
 @keyframes fader {
     0% {
-        background-image: url('/Images/Food1.jpg');
+        background-image: url('/Images/Pic1.jpeg');
     }
 
     20% {
-        background-image: url('/Images/Food1.jpg');
+        background-image: url('/Images/Pic1.jpeg');
     }
 
     25% {
-        background-image: url('/Images/Cake.jpg');
+        background-image: url('/Images/Pic2.jpeg');
     }
 
 
     45% {
-        background-image: url('/Images/Cake.jpg');
+        background-image: url('/Images/Pic2.jpeg');
     }
 
     50% {
-        background-image: url('/Images/Pizza.jpg');
+        background-image: url('/Images/Pic3.jpeg');
     }
 
     70% {
-        background-image: url('/Images/Pizza.jpg');
+        background-image: url('/Images/Pic3.jpeg');
     }
 
     75% {
-        background-image: url('/Images/Burger.jpg');
+        background-image: url('/Images/Pic4.jpeg');
     }
 
     95% {
-        background-image: url('/Images/Burger.jpg');
+        background-image: url('/Images/Pic4.jpeg');
     }
 
     100% {
-        background-image: url('/Images/Food1.jpg');
+        background-image: url('/Images/Pic1.jpeg');
     }
 }
 

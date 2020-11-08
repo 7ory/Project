@@ -258,6 +258,10 @@
     <Content Include="Images\Cake.jpg" />
     <Content Include="Images\Food1.jpg" />
     <Content Include="Images\Menue.jpg" />
+    <Content Include="Images\Pic1.jpeg" />
+    <Content Include="Images\Pic2.jpeg" />
+    <Content Include="Images\Pic3.jpeg" />
+    <Content Include="Images\Pic4.jpeg" />
     <Content Include="Images\Pizza.jpg" />
     <Content Include="Images\Spaghetti.jpg" />
     <Content Include="Images\Tabel1.jpg" />
