@@ -7,7 +7,7 @@
 <h2>All Orders</h2>
 
 
-<table class="table table-striped table-responsive">
+<table class="table  table-responsive">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.User.UserName)
@@ -54,7 +54,7 @@
                 </td>
                 <td>
 
-                    @Html.ActionLink("Remove", "Delete", new { id = item.ID, returnUrl = Url.Action() }, new { @class = "btn btn-danger" })
+                    @*@Html.ActionLink("Remove", "Delete", new { id = item.ID, returnUrl = Url.Action() }, new { @class = "btn btn-danger" })*@
                 </td>
             </tr>
         }
