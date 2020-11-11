@@ -33,15 +33,16 @@
 
     <label>Select your booking date: </label><br />
     @Html.EditorFor(model => model.BookingDate, new { htmlAttributes = new { @class = "form-control" } })
-    <span style="font-size:12px;">Reserve quickly before your slot disappears<br /><br /></span>
+    <span style="font-size:13px;">Reserve quickly before your slot disappears<br /><br /></span>
 
     <label>Select your booking time: </label><br />
     @Html.EditorFor(model => model.BookingTime, new { htmlAttributes = new { @class = "form-control" } })
-    <span style="font-size:12px;">We're avaible between 10am and 3pm<br /><br /></span>
+    <span style="font-size:13px;">We're avaible between 10am and 3pm<br /><br /></span>
 
     <label>How many people are coming: </label><br />
     @Html.EditorFor(model => model.Seats, new { htmlAttributes = new { @class = "form-control" } })
-    <span style="font-size:12px;">Maximum 10 people per booking<br /><br /></span>
+    <span style="font-size:13px;">Please only enter the max number indicated in the description.<br /><br /></span>
+    <span style="font-size:13px;">Or Table booking will be rejected.<br /><br /></span>
 
     @if (User.IsInRole(SD.EndUserRole))
     {
