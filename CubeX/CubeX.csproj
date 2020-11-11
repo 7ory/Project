@@ -355,6 +355,7 @@
     <Content Include="Views\TableBook\Index.cshtml" />
     <Content Include="Views\TableBook\Approve.cshtml" />
     <Content Include="Views\TableBook\Details.cshtml" />
+    <Content Include="Views\Account\RegisterAccountConfirm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
