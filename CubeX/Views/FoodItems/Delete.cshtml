@@ -38,19 +38,22 @@
 
         <dt>
             @Html.DisplayNameFor(model => model.Image)
+            @*<img src="data:image;base64,@System.Convert.ToBase64String(item.Image)" width="80" height="80" />*@
+
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Image)
+            <img src="data:image;base64,@System.Convert.ToBase64String(Model.Image)" width="80" height="80" />
+
         </dd>
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.Discriminator)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Discriminator)
-        </dd>
+           @Html.HiddenFor(model => model.Discriminator)
+        </dd>*@
 
     </dl>
 
@@ -58,8 +61,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
         </div>
     }
 </div>

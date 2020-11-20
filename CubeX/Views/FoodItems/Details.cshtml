@@ -40,20 +40,21 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Image)
+            <img src="data:image;base64,@System.Convert.ToBase64String(Model.Image)" width="80" height="80" />
+
         </dd>
 
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.Discriminator)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Discriminator)
-        </dd>
+        </dd>*@
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-default" }) |
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
 </p>
