@@ -63,7 +63,7 @@
                     @Html.DisplayFor(modelItem => food.Name)
                 </td>
                 <td>
-                    @food.Price
+                    @Html.DisplayFor(modelItem => food.Price)
                 </td>
                 <td>
                     <img src="data:image;base64,@System.Convert.ToBase64String(food.Image)" width="80" height="80" />
